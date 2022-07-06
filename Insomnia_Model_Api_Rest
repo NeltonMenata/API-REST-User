@@ -1,0 +1,209 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-07-04T02:05:03.451Z",
+    "__export_source": "insomnia.desktop.app:v2022.1.1",
+    "resources": [
+        {
+            "_id": "req_3c405a72b85f411c8eb0a38a4af2d40b",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656900120218,
+            "created": 1656864867556,
+            "url": "http://localhost:3000/user",
+            "name": "Delete One User",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\":\"neltonmenata@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_6f40c4bbedbe43cfa21ee6fccbf2da74"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656864867556,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "parentId": null,
+            "modified": 1656845881685,
+            "created": 1656845881685,
+            "name": "New Document",
+            "description": "",
+            "scope": "design",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_4ebb0e37005d43ad9f77284b2b7dc44d",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656900208265,
+            "created": 1656860845021,
+            "url": "http://localhost:3000/connection",
+            "name": "Connection",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"connect\":\"connect\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_fcecd50c604643afae2da4b7a3db44d3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656860845021,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_59d1ac93231e4d75835b7b88266595f5",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656900122225,
+            "created": 1656859994407,
+            "url": "http://localhost:3000/user",
+            "name": "Get One User",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\"email\":\"neltonmenata@gmail.com\"}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4be5f880fd9e4120b1d5674a24fb0eda"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656859994407,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ffa3c8ba1e3c4187b15149ad5f5f7fa6",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656854141345,
+            "created": 1656854022340,
+            "url": "http://localhost:3000/users",
+            "name": "List Users",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1656854022340,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b5c76296e9c5435aa81bd988330dfd1a",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656900125443,
+            "created": 1656845881736,
+            "url": "http://localhost:3000/user",
+            "name": "Add User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Nelton Menata\",\n\t\"email\": \"neltonmenata@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_f962dde8e26b4a54832a45821b5c9ba0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656845881737,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_b169773010c7d10494fa3956627b7aba02911a93",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656845881721,
+            "created": 1656845881721,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1656845881721,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_b169773010c7d10494fa3956627b7aba02911a93",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656845881729,
+            "created": 1656845881729,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_be7723cd9177409c84b87e09ebfbe8f9",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656900006385,
+            "created": 1656845881710,
+            "fileName": "API REST - USER",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "uts_38e910f0e2c44b4f93ade38c0d80e1e4",
+            "parentId": "wrk_df47e77be7b64f6ea1731d8ffbb68907",
+            "modified": 1656845881741,
+            "created": 1656845881741,
+            "name": "Example Test Suite",
+            "_type": "unit_test_suite"
+        }
+    ]
+}
