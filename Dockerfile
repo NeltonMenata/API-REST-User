@@ -1,16 +1,24 @@
 bashCopy code
 # Use the official Node.js image as the base image
-FROM node:18
+FROM alpine
 
+RUN apk update
+RUN apk add nodejs
+RUN apk add npm
+
+
+RUN mkdir /root/app
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /root/app
 
 # Copy the application files into the working directory
-COPY . /app
+COPY * /root/app
 
 # Install the application dependencies
 RUN npm install
 
-# Define the entry point for the container
-CMD ["npm", "start"]
 EXPOSE 3000
+
+# Define the entry point for the container
+CMD npm start
+
