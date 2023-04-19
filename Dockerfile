@@ -1,26 +1,15 @@
-FROM node:latest
+bashCopy code
+# Use the official Node.js image as the base image
+FROM node:18
 
-RUN mkdir parse
+# Set the working directory in the container
+WORKDIR /app
 
-ADD . /parse
-WORKDIR /parse
+# Copy the application files into the working directory
+COPY . /app
+
+# Install the application dependencies
 RUN npm install
 
-ENV APP_ID setYourAppId
-ENV MASTER_KEY setYourMasterKey
-ENV DATABASE_URI setMongoDBURI
-
-# Optional (default : 'parse/cloud/main.js')
-# ENV CLOUD_CODE_MAIN cloudCodePath
-
-# Optional (default : '/parse')
-# ENV PARSE_MOUNT mountPath
-
-EXPOSE 1337
-
-# Uncomment if you want to access cloud code outside of your container
-# A main.js file must be present, if not Parse will not start
-
-# VOLUME /parse/cloud               
-
-CMD [ "npm", "start" ]
+# Define the entry point for the container
+CMD ["npm", "start"]
