@@ -12,7 +12,7 @@ RUN mkdir /root/app
 WORKDIR /root/app
 
 # Copy the application files into the working directory
-COPY * /root/app
+COPY . /root/app
 
 # Install the application dependencies
 RUN npm install
